@@ -9,6 +9,11 @@ public class EnemyScript : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
     }
+
+    void Start()
+    {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+    }
   
     
 
